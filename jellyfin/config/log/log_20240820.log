@@ -173,3 +173,7 @@ System.IO.DirectoryNotFoundException: Could not find a part of the path '/cache/
 [2024-08-20 06:35:10.835 +00:00] [INF] [41] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
 [2024-08-20 06:37:13.373 +00:00] [WRN] [41] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "100.120.121.7" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
 [2024-08-20 06:37:13.399 +00:00] [INF] [41] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "100.120.121.7" closed
+[2024-08-20 17:27:05.140 +00:00] [INF] [35] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2024-08-20 17:27:05.145 +00:00] [WRN] [35] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2024-08-20 17:27:05.147 +00:00] [WRN] [37] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2024-08-20 17:27:05.150 +00:00] [INF] [35] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
