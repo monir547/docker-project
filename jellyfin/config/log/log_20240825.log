@@ -392,3 +392,48 @@ MediaBrowser.Common.FfmpegException: FFmpeg exited with code 1
 [2024-08-25 09:55:25.089 +00:00] [INF] [49] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
 [2024-08-25 09:58:13.089 +00:00] [INF] [59] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
 [2024-08-25 10:01:01.088 +00:00] [INF] [75] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2024-08-25 10:03:34.977 +00:00] [INF] [80] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Download missing subtitles" Completed after 0 minute(s) and 0 seconds
+[2024-08-25 10:03:35.022 +00:00] [INF] [76] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Audio Normalization" Completed after 0 minute(s) and 0 seconds
+[2024-08-25 10:03:35.059 +00:00] [INF] [85] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Log Directory" Completed after 0 minute(s) and 0 seconds
+[2024-08-25 10:03:35.060 +00:00] [INF] [76] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2024-08-25 10:03:35.060 +00:00] [INF] [80] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Cache Directory" Completed after 0 minute(s) and 0 seconds
+[2024-08-25 10:03:35.137 +00:00] [INF] [76] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media"
+[2024-08-25 10:03:35.137 +00:00] [INF] [76] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2024-08-25 10:03:35.137 +00:00] [INF] [85] Emby.Server.Implementations.ScheduledTasks.Tasks.OptimizeDatabaseTask: Optimizing and vacuuming jellyfin.db...
+[2024-08-25 10:03:35.139 +00:00] [INF] [80] Emby.Server.Implementations.Library.LibraryManager: People validation complete
+[2024-08-25 10:03:35.139 +00:00] [INF] [80] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh People" Completed after 0 minute(s) and 0 seconds
+[2024-08-25 10:03:35.192 +00:00] [INF] [80] Emby.Server.Implementations.ScheduledTasks.TaskManager: "TasksRefreshChannels" Completed after 0 minute(s) and 0 seconds
+[2024-08-25 10:03:35.272 +00:00] [WRN] [80] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2024-08-25 10:03:35.278 +00:00] [INF] [85] Emby.Server.Implementations.ScheduledTasks.Tasks.OptimizeDatabaseTask: jellyfin.db optimized successfully!
+[2024-08-25 10:03:35.278 +00:00] [INF] [85] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Optimize database" Completed after 0 minute(s) and 0 seconds
+[2024-08-25 10:03:35.313 +00:00] [INF] [76] Jellyfin.Drawing.ImageProcessor: Creating image collage and saving to "/cache/temp/42c3d1b13e3a4abcba3bec0f6a6c48c9.png"
+[2024-08-25 10:03:35.635 +00:00] [INF] [76] Jellyfin.Drawing.ImageProcessor: Completed creation of image collage and saved to "/cache/temp/42c3d1b13e3a4abcba3bec0f6a6c48c9.png"
+[2024-08-25 10:03:35.655 +00:00] [WRN] [78] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2024-08-25 10:03:35.660 +00:00] [INF] [78] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Starting "/usr/lib/jellyfin-ffmpeg/ffprobe" with args "-analyzeduration 200M -probesize 1G -i file:\"/media/Pushpa- The Rise - Part 1  2021 Hindi 1080P AMZN WEB-DL DDP 5.1 H 265 HEVC ESUB-[Hasan].mkv\" -threads 0 -v warning -print_format json -show_streams -show_chapters -show_format"
+[2024-08-25 10:03:38.246 +00:00] [INF] [78] Jellyfin.LiveTv.Guide.GuideManager: Refreshing guide with 7 days of guide data
+[2024-08-25 10:03:38.251 +00:00] [INF] [78] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh Guide" Completed after 0 minute(s) and 3 seconds
+[2024-08-25 10:03:40.126 +00:00] [ERR] [85] MediaBrowser.Providers.Movies.MovieMetadataService: Error in "TheMovieDb"
+System.Net.Http.HttpRequestException: Network is unreachable (api.themoviedb.org:443)
+ ---> System.Net.Sockets.SocketException (101): Network is unreachable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at TMDbLib.Rest.RestRequest.SendInternal(HttpMethod method, CancellationToken cancellationToken)
+   at TMDbLib.Rest.RestRequest.Get[T](CancellationToken cancellationToken)
+   at TMDbLib.Rest.RestRequestExtensions.GetOfT[T](RestRequest request, CancellationToken cancellationToken)
+   at TMDbLib.Client.TMDbClient.SearchMethodInternal[T](String method, String query, Int32 page, String language, Nullable`1 includeAdult, Int32 year, String dateFormat, String region, Int32 primaryReleaseYear, Int32 firstAirDateYear, CancellationToken cancellationToken)
+   at TMDbLib.Client.TMDbClient.SearchMovieAsync(String query, String language, Int32 page, Boolean includeAdult, Int32 year, String region, Int32 primaryReleaseYear, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Plugins.Tmdb.TmdbClientManager.SearchMovieAsync(String name, Int32 year, String language, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Plugins.Tmdb.Movies.TmdbMovieProvider.GetMetadata(MovieInfo info, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.MetadataService`2.ExecuteRemoteProviders(MetadataResult`1 temp, String logName, Boolean replaceData, TIdType id, IEnumerable`1 providers, CancellationToken cancellationToken)
+[2024-08-25 10:03:49.088 +00:00] [INF] [85] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
