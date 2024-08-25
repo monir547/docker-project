@@ -1,0 +1,15 @@
+services:
+  jellyfin:
+    ports:
+      - 8096:8096
+    image: jellyfin/jellyfin
+    container_name: jellyfin-compose
+    volumes:
+      - /home/monir/mygithub/docker-project/jellyfin/config:/config
+      - /home/monir/mygithub/docker-project/jellyfin/cache:/cache
+      - type: bind
+        source: /home/monir/nfs-share/media
+        target: /media
+        read_only: true
+    restart: 'unless-stopped'
+    
