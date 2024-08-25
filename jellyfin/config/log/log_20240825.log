@@ -437,3 +437,11 @@ System.Net.Http.HttpRequestException: Network is unreachable (api.themoviedb.org
    at MediaBrowser.Providers.Plugins.Tmdb.Movies.TmdbMovieProvider.GetMetadata(MovieInfo info, CancellationToken cancellationToken)
    at MediaBrowser.Providers.Manager.MetadataService`2.ExecuteRemoteProviders(MetadataResult`1 temp, String logName, Boolean replaceData, TIdType id, IEnumerable`1 providers, CancellationToken cancellationToken)
 [2024-08-25 10:03:49.088 +00:00] [INF] [85] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2024-08-25 10:03:52.534 +00:00] [INF] [78] Jellyfin.Drawing.ImageProcessor: Creating image collage and saving to "/cache/temp/9641047f837d41a293c600d4bff8963d.png"
+[2024-08-25 10:03:52.855 +00:00] [INF] [78] Jellyfin.Drawing.ImageProcessor: Completed creation of image collage and saved to "/cache/temp/9641047f837d41a293c600d4bff8963d.png"
+[2024-08-25 10:03:52.868 +00:00] [INF] [80] Jellyfin.Drawing.ImageProcessor: Creating image collage and saving to "/cache/temp/e935ab9b0de643ac985e1a840cf2cf0c.png"
+[2024-08-25 10:03:53.190 +00:00] [INF] [80] Jellyfin.Drawing.ImageProcessor: Completed creation of image collage and saved to "/cache/temp/e935ab9b0de643ac985e1a840cf2cf0c.png"
+[2024-08-25 10:03:53.203 +00:00] [INF] [78] Jellyfin.Drawing.ImageProcessor: Creating image collage and saving to "/cache/temp/c3dc196e14cd41fbb1d1db3770c56af1.png"
+[2024-08-25 10:03:53.518 +00:00] [INF] [78] Jellyfin.Drawing.ImageProcessor: Completed creation of image collage and saved to "/cache/temp/c3dc196e14cd41fbb1d1db3770c56af1.png"
+[2024-08-25 10:03:53.530 +00:00] [INF] [80] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 18 seconds
+[2024-08-25 10:03:53.531 +00:00] [INF] [76] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media"
